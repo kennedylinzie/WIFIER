@@ -1,0 +1,53 @@
+﻿<Window x:Class="WIFIER.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WIFIER"
+        mc:Ignorable="d"
+       Title="Wifier" Height="450" Width="500" WindowStyle="ThreeDBorderWindow" Icon="/bitmap.png" ResizeMode="NoResize" HorizontalAlignment="Center" Grid.IsSharedSizeScope="True" Background="#FF7A6E6E" WindowState="Normal" IsTabStop="False" AutomationProperties.IsRequiredForForm="True" ShowActivated="False" Closing="when_closing" >
+    <Window.Style>
+        <Style/>
+    </Window.Style>
+    <Window.TaskbarItemInfo>
+        <TaskbarItemInfo/>
+    </Window.TaskbarItemInfo>
+    <Grid UseLayoutRounding="True" Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="108*"/>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Style>
+            <Style/>
+        </Grid.Style>
+        <Label Content="WIFIER" HorizontalAlignment="Left" VerticalAlignment="Top" Width="292" Margin="90,-11,0,0" FontWeight="Bold" FontFamily="Montserrat" FontSize="36" HorizontalContentAlignment="Center" Background="White" Foreground="#FF00B9FF"/>
+
+
+        <TextBox x:Name="txt_myinput" TextWrapping="Wrap" Margin="10,136,10,27" TextChanged="Txt_myinput_TextChanged" BorderBrush="#FF00B9FF" Foreground="#FF00B9FF" Grid.ColumnSpan="2" Background="Black" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.21"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.496"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button Content="Stop" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Background="#FF00B9FF" Foreground="White" BorderBrush="#FF00B9FF" FontFamily="Montserrat" Height="23"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="90,69,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="166"/>
+        <TextBox x:Name="txt_hotspotname" HorizontalAlignment="Left" Height="23" Margin="90,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" BorderBrush="#FF00B9FF" FontWeight="Normal" FontFamily="Montserrat"/>
+        <TextBox x:Name="txt_hotspote_password" HorizontalAlignment="Left" Height="23" Margin="278,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" BorderBrush="#FF00B9FF" Grid.ColumnSpan="2" FontWeight="Normal" FontFamily="Montserrat"/>
+        <Label Content="Hotspot Name" HorizontalAlignment="Left" VerticalAlignment="Top" Width="183" FontWeight="Medium" Margin="102,40,0,0" BorderBrush="Black" Foreground="#FF00B9FF"/>
+        <Label Content="Password" HorizontalAlignment="Left" VerticalAlignment="Top" Width="183" FontWeight="Medium" Margin="290,40,0,0" BorderBrush="Black" Foreground="#FF00B9FF" Grid.ColumnSpan="2"/>
+        <Button x:Name="cmd_show_hosts1" Content="Connected Devices" HorizontalAlignment="Left" Margin="90,94,0,0" VerticalAlignment="Top" Width="126" Click="Cmd_show_hosts1_Click" Background="#FF00B9FF" Foreground="White" BorderBrush="#FF00B9FF" Height="23" FontFamily="Montserrat"/>
+        <Label Content="By Kennedy linzie" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="185,25,0,0" Background="#00000000" Foreground="#FF00B9FF" FontFamily="Montserrat" FontSize="10"/>
+        <Rectangle x:Name="btn__2" Fill="#FFFF4827" HorizontalAlignment="Left" Height="7" Stroke="#FFFF5454" VerticalAlignment="Top" Width="7" Margin="278,62,0,0" IsEnabled="False"/>
+        <Rectangle x:Name="btn__1" Fill="#FFFF4827" HorizontalAlignment="Left" Height="7" Stroke="#FFFF5454" VerticalAlignment="Top" Width="7" Margin="90,62,0,0" IsEnabled="False"/>
+        <Image x:Name="img_state_on" HorizontalAlignment="Left" Height="46" Margin="10,10,0,0" VerticalAlignment="Top" Width="50" Source="/on.png"/>
+        <Image x:Name="img_state_off" HorizontalAlignment="Left" Height="46" Margin="10,10,0,0" VerticalAlignment="Top" Width="50" Source="/off.png"/>
+        <Button x:Name="Pressme" Content="Start" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="75" Click="Pressme_Click" Background="#FF00B9FF" Foreground="White" BorderBrush="#FF00B9FF" FontFamily="Montserrat" Height="23"/>
+        <Button Content="_" Grid.Column="1" VerticalAlignment="Top" Height="27" HorizontalAlignment="Right" Width="31" Click="minimise" Background="#FF00B9FF" BorderBrush="#FF00B9FF"/>
+
+    </Grid>
+</Window>
